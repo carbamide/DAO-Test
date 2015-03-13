@@ -7,7 +7,7 @@ import android.content.Context;
  * Created by jbarrow on 3/13/15.  Yay!
  */
 
-public class MyApplication extends Application
+public class DAOTestApplication extends Application
 {
 
     private static Context mContext;

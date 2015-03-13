@@ -16,7 +16,7 @@ public class DatabaseManager
     public final ItemDao itemDao;
 
     private DatabaseManager() {
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(MyApplication.getContext(), "items-db", null);
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(DAOTestApplication.getContext(), "items-db", null);
         SQLiteDatabase db = helper.getWritableDatabase();
         DaoMaster daoMaster = new DaoMaster(db);
         DaoSession daoSession = daoMaster.newSession();
